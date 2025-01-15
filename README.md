@@ -1,22 +1,25 @@
 ## Project Overview
 
-The Language Learning App will help users learn new languages by providing translations, quizzes, and flashcards. Initially, we will focus on the Word and Phrase Translation feature, with plans to expand to other features in future iterations.
+The Language Learning App will help users learn new languages by providing translations and flashcards. Initially, I will focus on the Word and Phrase Translation feature, with plans to expand to other features in future iterations.
 
-Features
-User Authentication
+### Live: `https://language-learning-app-ccjt.onrender.com`
 
-Register, log in, and log out securely.
-User sessions managed via Supabase.
-Translation
+#### Features
+- User Authentication
+- User sessions managed via Supabase.
+
+**Translation**
 
 Translate words and phrases to multiple supported languages.
 Utilize a dropdown menu to select the target language.
 Save translations as flashcards for later review.
-Flashcards
+
+**Flashcards**
 
 View saved translations as flashcards.
 Interactive flashcard interface with words on one side and translations on the other.
-Responsive Design
+
+**Responsive Design**
 
 Fully responsive and works seamlessly across devices.
 

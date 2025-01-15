@@ -1,25 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../supabase';
 import '../../styles/Register.css';
 
 const Register = () => {
   const navigate = useNavigate();
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
 
   const handleRegister = async (e) => {
     e.preventDefault();
     const { email, password } = e.target.elements;
+
+    // Clear previous messages
+    setMessage('');
+    setError('');
+    
     const { error } = await supabase.auth.signUp({
       email: email.value,
       password: password.value,
     });
-    if (error) alert(error.message);
-    else alert('Registration successful!');
+
+    if (error) {
+      setError(error.message); 
+    } else {
+      setMessage('Registration successful! Redirecting to login...');
+      setTimeout(() => navigate('/login'), 3000); // Redirect after 3 seconds
+    }
   };
 
   return (
     <div className="register-container">
       <h2>Register</h2>
+      {error && <p className="error">{error}</p>}
+      {message && <p className="success">{message}</p>}
       <form onSubmit={handleRegister} className="register-form">
         <input
           type="email"

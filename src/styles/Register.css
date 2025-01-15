@@ -1,0 +1,33 @@
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-input {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.register-button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-link {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}

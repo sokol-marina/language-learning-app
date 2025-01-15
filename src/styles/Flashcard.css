@@ -1,0 +1,108 @@
+.flashcard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Existing Flashcard Styles */
+.flashcard {
+    width: 200px;
+    height: 150px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+}
+
+.flashcard-front,
+.flashcard-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s;
+}
+
+.flashcard-back {
+    background-color: #28a745;
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped .flashcard-front {
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped .flashcard-back {
+    transform: rotateY(0);
+}
+
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.flashcard-front {
+    background-color: #007bff;
+    /* Original blue color */
+    color: #fff;
+}
+
+/* Memorized front style */
+.flashcard-front.memorized {
+    background-color: #d8b4e2;
+    /* Lilac color */
+    color: #333;
+    /* Adjust text color for better readability */
+}
+
+/* New Styles for Memorize Button */
+.memorized-button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.memorized-button.active {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+.memorized-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.delete-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #dc3545;
+    background-color: #fff;
+    color: #dc3545;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #dc3545;
+    color: #fff;
+}

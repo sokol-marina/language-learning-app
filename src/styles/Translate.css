@@ -1,0 +1,130 @@
+.translate-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.translate-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.translate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.translate-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.translate-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.translate-button:hover {
+    background-color: #0056b3;
+}
+
+.translate-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.translate-error {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #dc3545;
+}
+
+.supported-languages {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.languages-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.languages-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.languages-list li {
+    padding: 5px 0;
+    color: #495057;
+}
+
+.translate-result-window {
+    margin-top: 20px;
+    padding: 15px;
+    min-height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.placeholder-text {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.translate-error {
+    margin-top: 20px;
+    color: #dc3545;
+    font-size: 1rem;
+}
+
+.save-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+.save-success {
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 1.2rem;
+}
+
+.translate-error {
+    margin-top: 10px;
+    color: #dc3545;
+}

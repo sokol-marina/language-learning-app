@@ -15,17 +15,17 @@ const Register = () => {
     // Clear previous messages
     setMessage('');
     setError('');
-    
+
     const { error } = await supabase.auth.signUp({
       email: email.value,
       password: password.value,
     });
 
     if (error) {
-      setError(error.message); 
+      setError(error.message);
     } else {
       setMessage('Registration successful! Redirecting to login...');
-      setTimeout(() => navigate('/login'), 3000); // Redirect after 3 seconds
+      setTimeout(() => navigate('/login'), 1000); // Redirect after 1 seconds
     }
   };
 
